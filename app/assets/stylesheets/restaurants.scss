@@ -1,3 +1,33 @@
 // Place all the styles related to the Restaurants controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+$dark: #484349;
+$light: #f7f0f0;
+$light-blue: #8af3ff;
+$blue-green: #18a999;
+$green: #109648;
+
+.body {
+  background-color: $dark;
+}
+
+.container {
+  background-color: $light;
+}
+
+.nav-flex {
+  display: flex;
+  }
+
+a {
+  font-weight: bold;
+  font-size: 0.8em;
+  color: $dark;
+  &:hover {
+    color: $dark;
+  }
+}
+.bouton {
+  font-size: 0.5em;
+  padding: 3px;
+}

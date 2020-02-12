@@ -1,7 +1,19 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  color: #F33;
+
+h2 {
+  font-size: 1.5em;
 }
+
+.btn {
+  font-size: 0.5em;
+  padding: 5px;
+}
+
+}
+
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;

@@ -1,10 +1,28 @@
-<h1>My restaurants</h1>
-<ul>
-<% @restaurants.each do |restaurant| %>
-  <li><%= link_to restaurant.name.capitalize, restaurant_path(restaurant) %></li>
-  <li><%= restaurant.category %></li>
-  <% end %>
-</ul>
-<p class="py-3"><%= link_to "+ Add a new restaurant", new_restaurant_path %></p>
+<div class="navbar-lewagon px-3 py-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-center">
+        <div class="nav-flex">
+          <h2>My restaurants</h2>
+          <%= link_to "+ Add a new restaurant", new_restaurant_path, class: "btn btn-primary" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-center">
+      <ul class='list-inline pt-5'>
+        <% @restaurants.each do |restaurant| %>
+        <li><%= restaurant.name.capitalize %>   <%= link_to "Details", restaurant_path(restaurant), class: "bouton btn btn-primary round" %></li>
+        <li><%= restaurant.category %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
 
 
